@@ -1,0 +1,781 @@
+<html>
+
+    <head>
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet\bulbs.css">
+        <link rel="stylesheet" href="stylesheet\index.css">
+        <link rel="stylesheet" href="stylesheet\cake.css">
+        <link rel="stylesheet" href="stylesheet\balloons.css">
+        <link rel="stylesheet" href="stylesheet\sidemenu.css">
+        <link rel="stylesheet" href="stylesheet\slideshow.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+        <script src="index.js"></script>
+        <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+    
+        <title> Happy Birthday </title>
+
+    </head>
+
+    <body id="body-init">
+
+        <div id="start-btns-div">
+            <a id="start-btn" href="#" onclick="displayCake()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                TURN ON LIGHTS
+            </a>
+            <!-- <button id="start-btn" class="start-button" onclick="displayCake()"> TURN ON LIGHTS </button> -->
+            <button id="start-btn2" class="start-button display-none" onclick="blowCandle()"> BLOW CANDLE </button>
+        </div>
+    
+        <!-- ########## CAKE ########## -->
+       
+        <div id="cake-container">
+            <div id = "cake1" class="display-none">
+                <div class="plate"></div>
+                <div class="layer layer-bottom"></div>
+                <div class="layer layer-middle"></div>
+                <div class="layer layer-top"></div>
+                <div class="icing"></div>
+                <div class="drip drip1"></div>
+                <div class="drip drip2"></div>
+                <div class="drip drip3"></div>
+                <div class="candle">
+                    <div id = "cake11" class="flame"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ########## AUDIO ########## -->
+
+        <audio id="background-audio" controls loop>
+            <source src="audio\audio.mp3"></source>
+        </audio>
+
+        <!-- ########## BULBS ########## -->
+    
+
+        <div id="bulbs-off" class="display-none">
+            <div id="blue-bulb-off" class="bulbs">
+                <img class="bulb-off" src="images/bulb.png">
+            </div>
+            <div id="green-bulb-off" class="bulbs">
+                <img class="bulb-off" src="images/bulb.png">
+            </div>
+            <div id="orange-bulb-off" class="bulbs">
+                <img class="bulb-off" src="images/bulb.png">
+            </div>
+            <div id="pink-bulb-off" class="bulbs">
+                <img class="bulb-off" src="images/bulb.png">
+            </div>
+            <div id="red-bulb-off" class="bulbs">
+                <img class="bulb-off" src="images//bulb.png">
+            </div>
+            <div id="yellow-bulb-off" class="bulbs">
+                <img class="bulb-off" src="images//bulb.png">
+            </div>
+        </div>
+
+        <div id="bulbs-on" class="display-none">
+            <div id="blue-bulb-on" class="bulbs">
+                <img class="bulb-on" src="images/bulb_blue.png">
+            </div>
+            <div id="green-bulb-on" class="bulbs">
+                <img class="bulb-on" src="images/bulb_green.png">
+            </div>
+            <div id="orange-bulb-on" class="bulbs">
+                <img class="bulb-on" src="images/bulb_orange.png">
+            </div>
+            <div id="pink-bulb-on" class="bulbs">
+                <img class="bulb-on" src="images/bulb_pink.png">
+            </div>
+            <div id="red-bulb-on" class="bulbs">
+                <img class="bulb-on" src="images//bulb_red.png">
+            </div>
+            <div id="yellow-bulb-on" class="bulbs">
+                <img class="bulb-on" src="images//bulb_yellow.png">
+            </div>
+            </div>
+        </div>
+
+        <!-- ########## BALLOONS ########## -->
+
+        <div id="balloons" class="display-none">
+
+            <!-- BALLOON 1 - -5% -->
+
+            <div class="balloon">  
+                <img src="images\b5.png">
+            </div>
+
+            <!-- BALLOON 2 - 5% -->
+
+            <div class="balloon">  
+               <img src="images\b4.png">
+           </div>
+
+           <!-- BALLOON 3 - 10% -->
+
+           <div class="balloon">  
+               <img src="images\b1.png">
+           </div>
+
+           <!-- BALLOON 4 - 15% -->
+
+           <div class="balloon">
+               <img src="images\b3.png">
+           </div>
+
+           <!-- BALLOON 5 - 20% -->
+
+           <div class="balloon">
+               <img src="images\b5.png">
+           </div>
+
+           <!-- BALLOON 6 - 25% -->
+
+           <div class="balloon">
+               <img src="images\b2.png">
+           </div>
+
+           <!-- BALLOON 7 - 30% -->
+
+           <div class="balloon">
+               <img src="images\b4.png">
+           </div>
+
+           <!-- BALLOON 8 - 35% -->
+           
+           <div class="balloon">
+               <img src="images\b7.png">
+           </div>
+
+           <!-- BALLOON 9 - 40% -->
+
+           <div class="balloon">
+               <img src="images\b6.png">
+           </div>
+
+           <!-- BALLOON 10 - 45% -->
+
+           <div class="balloon">
+               <img src="images\b3.png">
+           </div>
+
+           <!-- BALLOON 11 - 50% -->
+           
+           <div class="balloon">
+               <img src="images\b2.png">
+           </div>
+
+           <!-- BALLOON 12 - 55% -->
+
+           <div class="balloon">
+               <img src="images\b1.png">
+           </div>
+
+           <!-- BALLOON 13 - 60% -->
+           
+           <div class="balloon">
+               <img src="images\b7.png">
+           </div>
+
+           <!-- BALLOON 14 - 65% -->
+
+           <div class="balloon">
+               <img src="images\b5.png">
+           </div>
+
+           <!-- BALLOON 15 - 70% -->
+
+           <div class="balloon">
+               <img src="images\b6.png">
+           </div>
+
+           <!-- BALLOON 16 - 75% -->
+
+           <div class="balloon">
+               <img src="images\b4.png">
+           </div>
+
+           <!-- BALLOON 17 - 80% -->
+
+           <div class="balloon">
+               <img src="images\b3.png">
+           </div>
+
+           <!-- BALLOON 18 - 85% -->
+
+           <div class="balloon">
+               <img src="images\b7.png">
+           </div>
+
+           <!-- BALLOON 19 - 90% -->
+
+           <div class="balloon">
+               <img src="images\b1.png">
+           </div>
+
+           <!-- BALLOON 20 - 95% -->
+
+           <div class="balloon">
+               <img src="images\b7.png">
+           </div>
+        </div>
+        
+        <!-- ########## SIDE MENU ########## -->
+
+        <aside>
+            <div id="side-menu" class="display-none">
+                <div id="toggle-button" class="toggle-btn" onclick="toggleSideBar()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul>
+                    <li class="sidebar-title">MENU</li>
+                    <li class="options" onclick="showHome()">Home</li>
+                    <li class="options" onclick="showMemories()">Memories</li>
+                    <li class="options" onclick="showQuizes()">Quizes</li>
+                    
+                    <!-- <ul class="logo">
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                    </ul> -->
+                    
+                </ul>
+            </div>
+        </aside>
+
+        <!-- ########## TITLE ########## -->
+
+        <div id="title-container" class="display-none">
+            <div class="title-label"><h2> HAPPY BIRTHDAY ALFIYA</h2></div>
+        </div>
+
+        <!-- ########## MESSAGES ########## -->
+
+        <div id="message_container" class="display-none"><span id="message" class="change-content"></span></div>
+
+        <!-- ########## 3D SLIDE SHOW ########## -->
+
+        <div id="photo-slideshow" class="display-none">
+            <section class="slideshow">
+                <div class="content">
+                    <div class="content-carrousel">
+                        <figure class ="shadow"><img src="images\slideshow_image1.jpg"></figure>
+                        <figure class ="shadow"><img src="images\slideshow_image2.jpg"></figure>
+                        <figure class ="shadow"><img src="images\slideshow_image3.jpg"></figure>
+                        <figure class ="shadow"><img src="images\slideshow_image4.jpg"></figure>
+                        <figure class ="shadow"><img src="images\slideshow_image5.jpg"></figure>
+                        <figure class ="shadow"><img src="images\slideshow_image6.jpg"></figure>
+                        <figure class ="shadow"><img src="images\slideshow_image7.jpg"></figure>
+                        <figure class ="shadow"><img src="images\slideshow_image8.jpg"></figure>
+                        <figure class ="shadow"><img src="images\slideshow_image9.jpg"></figure>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ########## ENVELOPE ########## -->
+       
+        <!-- <div id="envelope" class="envelope-container display-none">
+            <div class="wrapper">
+                <div class="mail">
+                    <div class="cover"></div>
+                    <div class="letter"><p> HAPPY BIRTHDAY TO ONE OF THE FEW PEOPLE WHOSE BIRTHDAY WE CAN REMEMBER WITHOUT FACEBOOK REMINDER ♥ </p></div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- ########## QUIZES ########## -->
+
+        <div id="quiz">
+
+            <!-- ########## QUIZ 1 ########## -->
+
+            <div id="quiz1" class="display-none">
+                <h3 class="quiz-question">
+                    Kbhi socha nhi tha ki hum achhe dost honge
+Samay aisa bhi tha ek class mai hoke bhi formal se zyada kuch baat kiye na ho aur samay aisa bhi aaya ki humne bhut baate kiye. We have explored street foods together shopped together & I even learnt how to bargain under your training😁😁<br>
+                </h3>
+   
+                <div class="quiz-textbox-container">
+                    <input type="text" id="quiz-textbox1_1" class="quiz-textbox" onchange="capitalizeTextboxContents(1)" placeholder="Enter Answer"/> 
+                </div>
+
+                <div class="quiz-button-container">
+                    <button type="submit" id="submit-quiz1" class="quiz-button" onclick="checkQuiz1()"> Submit </button>
+                </div>
+
+                <div class="video-container">
+                    <video height="300" id="video1" class="display-none" controls hidden>
+                        <source src="videos\video1.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+            </div>
+
+            <!-- ########## QUIZ 2 ########## -->
+
+            <div id="quiz2" class="display-none">
+                <h3 class="quiz-question">
+                    Koi khas kaam Nahi kiya hai tune
+Koi khas kaam Nahi kiya hai tune
+Par phir bhi Mujhe Tu bhati hai
+OT Me bak bak karne wali,Pet pakadkar hasne wali,Apne aap ko don samajne wali...
+Naa jaane meri zindagi me kyu aai hai Tu 
+Naa jaane meri zindagi me kyu aai hai Tu 
+Par chalo aagai hai toh yeh daawa hai Mera aakhri dum tak saath nibhana hai tera<br>
+                </h3>
+
+                <div class="quiz-textbox-container">
+                    <input type="text" id="quiz-textbox2_1" class="quiz-textbox" onchange="capitalizeTextboxContents(2)" placeholder="Enter Answer"/>                
+                </div>
+
+                <div class="quiz-button-container">
+                    <button type="submit" id="submit-quiz2" class="quiz-button" onclick="checkQuiz2()"> Submit </button>
+                </div>
+
+                <div class="video-container">
+                    <video height="300" id="video2" class="display-none" controls hidden>
+                        <source src="videos\video2.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <!-- ########## QUIZ 3 ########## -->
+
+            <div id="quiz3" class="display-none">
+                <h3 class="quiz-question">
+                    Upar Se Bolte Hain What's Up, Buddy!
+Neeche Se Kheenchte Hai Chaddi Chaddi
+Saala Ijjat Utaarne Ko Always Ready
+Har Ek Friend Kamina Hota Hai
+Bole Toh Har Ek Friend Kamina Hota Hai
+Har Ek Friend Kamina Hota Hai
+Bole Toh Har Ek Friend Kamina Hota Hai
+                </h3>
+
+                <div class="quiz-textbox-container">
+                    <input type="text" id="quiz-textbox3_1" class="quiz-textbox" onchange="capitalizeTextboxContents(3)" placeholder="Enter Your Answer"/>
+                </div>
+
+                <div class="quiz-button-container">
+                    <button type="submit" id="submit-quiz3" class="quiz-button" onclick="checkQuiz3()"> Submit </button>
+                </div>
+
+                <div class="video-container">
+                    <video height="300" id="video3" class="display-none" controls hidden>
+                        <source src="videos\video3.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <!-- ########## QUIZ 4 ########## -->
+
+            <div id="quiz4" class="display-none">
+                <h3 class="quiz-question">
+                    Waqt esa h ki hum mil nhi skte, yaade esi h jo bhula nhi skte , 
+Tere saat ban gaya esa rishta jo zindagi bhaar thukara nhi skte . 
+Asman ke niche jiye the, 
+ Vo sukoon ke lamhe , 
+Bemanzil befikre !!! 
+Insta se shuru hui thi apni dosti , 
+Socha nhi tha itne kaam waqt me hojaegi itni achiii . 
+"Yahi sab baatein toh baadme yaad aaengi"!
+                </h3>
+
+                <div class="quiz-textbox-container">
+                    <input type="text" id="quiz-textbox4_1" class="quiz-textbox" onchange="capitalizeTextboxContents(4)" placeholder="Enter Your Answer"/>
+                </div>
+
+                <div class="quiz-button-container">
+                    <button type="submit" id="submit-quiz4" class="quiz-button" onclick="checkQuiz4()"> Submit </button>
+                </div>
+
+                <div class="video-container">
+                    <video height="300" id="video4" class="display-none" controls hidden>
+                        <source src="videos\video4.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <!-- ########## QUIZ 5 ########## -->
+
+            <div id="quiz5" class="display-none">
+                <h3 class="quiz-question">
+                    Teri har ke buraai pe daante woh dost
+Gam ki ho dhoop to saaya bane tera woh dost
+Naache bhi woh teri khushi main
+aree Yaaron dosti badi hi haseen hai
+Yeh na ho to kya phir
+Bolo yeh zindagi hai
+                </h3>
+
+                <div class="quiz-textbox-container">
+                    <input type="text" id="quiz-textbox5_1" class="quiz-textbox" onchange="capitalizeTextboxContents(5)" placeholder="Enter Your Answer"/>
+                </div>
+
+                <div class="quiz-button-container">
+                    <button type="submit" id="submit-quiz5" class="quiz-button" onclick="checkQuiz5()"> Submit </button>
+                </div>
+
+                <div class="video-container">
+                    <video height="300" id="video5" class="display-none" controls hidden>
+                        <source src="videos\video5.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <!-- ########## QUIZ 6 ########## -->
+
+            <div id="quiz6" class="display-none">
+                <h3 class="quiz-question">
+                    Aur leader kya bolte,
+Team members ke naam yaad hote nai tujse,
+Pehli baar mai hi mera naam galat liya,
+Abe Chod Jaa maaf kiya,
+
+Damsharas jeeta jaata nahi tumse,
+"Beta tune galat bande se panga liya"
+Abe Chod Jaa maaf kiya.
+
+Kyuki aur koi option hai nahi mere pass
+                </h3>
+
+                <div class="quiz-textbox-container">
+                    <input type="text" id="quiz-textbox6_1" class="quiz-textbox" onchange="capitalizeTextboxContents(6)" placeholder="Enter Your Answer"/>
+                </div>
+
+                <div class="quiz-button-container">
+                    <button type="submit" id="submit-quiz6" class="quiz-button" onclick="checkQuiz6()"> Submit </button>
+                </div>
+
+                <div class="video-container">
+                    <video height="300" id="video6" class="display-none" controls hidden>
+                        <source src="videos\video6.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <!-- ########## QUIZ 7 ########## -->
+
+            <div id="quiz7" class="display-none">
+                <h3 class="quiz-question">
+                    Kuch tha nai apne bich khas 
+Fir b nibhaya rishta jese ho bada hi khass 
+Karte nai the roj baat 
+Fir b aati rhi Cls k baad Teri yaad 
+Rehti hu humesha shant Par hasti Kitna hu yaar 
+Bhale hi milte na ho hum roj par bdays me humesha sath..
+                </h3>
+
+                <div class="quiz-textbox-container">
+                    <input type="text" id="quiz-textbox7_1" class="quiz-textbox" onchange="capitalizeTextboxContents(7)" placeholder="Enter Your Answer"/>
+                </div>
+
+                <div class="quiz-button-container">
+                    <button type="submit" id="submit-quiz7" class="quiz-button" onclick="checkQuiz7()"> Submit </button>
+                </div>
+
+                <div class="video-container">
+                    <video height="300" id="video7" class="display-none" controls hidden>
+                        <source src="videos\video7.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <!-- ########## QUIZ 8 ########## -->
+
+            <div id="quiz8" class="display-none">
+                <h3 class="quiz-question">
+                    वह क्लासेस की यादें वो खट्टी मीठी बातें।
+वह तेरा हर बात पर मुझे बेहूदा औरत कहकर बुलाना, और बात बात पर झट से मुंह चिढ़ाना।😏
+वह बारिश में हमारा साथ भीगना और ब्रेक में फट से समोसा खाना।😋
+वॉशरूम में जाकर हर बार वॉशरूम की बुराई करना।🤮
+वह तेरा हर lecture में भूख लगी है कहना और Sunday को मेरी अचार पूड़ी का इंतजार करना।🤪🤪
+वह तेरा हर छोटी छोटी बात पर खिलखिलाना और मेरे हर छोटी छोटी बात पर रोने से टीचर को कोसना।😬
+ Bhambwani सर का सारे lecture लेना और उनके जाने के बाद तेरा यह बोलना कि यह तो महान है सारा। Subject  यही पढ़ाएंगे।🙄
+हर test में रोना और हमेशा यही कहना यार इस बार तो करना ही है।💪
+वह ICAI जाना और lecture bunk बंक मारकर गिरगांव चौपाटी घूमने जाना।🤩
+बहुत याद आता है वह सब कुछ जो हमने साथ बिताया था।😞🥰
+                </h3>
+
+                <div class="quiz-textbox-container">
+                    <input type="text" id="quiz-textbox8_1" class="quiz-textbox" onchange="capitalizeTextboxContents(8)" placeholder="Enter Your Answer"/>
+                </div>
+
+                <div class="quiz-button-container">
+                    <button type="submit" id="submit-quiz8" class="quiz-button" onclick="checkQuiz8()"> Submit </button>
+                </div>
+
+                <div class="video-container">
+                    <video height="300" id="video8" class="display-none" controls hidden>
+                        <source src="videos\video8.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <!-- ########## QUIZ 9 ########## -->
+
+            <div id="quiz9" class="display-none">
+                <h3 class="quiz-question">
+                    Keep smiling, keep shining
+Knowing you can always count on me, for sure
+That's what friends are for
+For good times and bad times
+I'll be on your side forever more
+That's what friends are for
+                </h3>
+
+                <div class="quiz-textbox-container">
+                    <input type="text" id="quiz-textbox9_1" class="quiz-textbox" onchange="capitalizeTextboxContents(9)" placeholder="Enter Your Answer"/>
+                </div>
+
+                <div class="quiz-button-container">
+                    <button type="submit" id="submit-quiz9" class="quiz-button" onclick="checkQuiz9()"> Submit </button>
+                </div>
+
+                <div class="video-container">
+                    <video height="300" id="video9" class="display-none" controls hidden>
+                        <source src="videos\video9.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <!-- ########## QUIZ 10 ########## -->
+
+            <div id="quiz10" class="display-none">
+                <h3 class="quiz-question">
+                    Kai Secret Share Kiye😪, Share Bhi Kiya Hai Sapna💔
+School Bench Share Karne Se Memes Share karne tak ka Safar rha hai apna😬,
+Sunane Waale Toh Bahot Mile Zindagi Mei🙌,Sunne Wala Tu hi toh hai Bas #Jabarjhandu  Dost apna.......😍😍😍😍Dil se Dil tak💞
+                </h3>
+
+                <div class="quiz-textbox-container">
+                    <input type="text" id="quiz-textbox10_1" class="quiz-textbox" onchange="capitalizeTextboxContents(10)" placeholder="Enter Your Answer"/>
+                </div>
+
+                <div class="quiz-button-container">
+                    <button type="submit" id="submit-quiz10" class="quiz-button" onclick="checkQuiz10()"> Submit </button>
+                </div>
+
+                <div class="video-container">
+                    <video height="300" id="video10" class="display-none" controls hidden>
+                        <source src="videos\video10.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <!-- ########## QUIZ 11 ########## -->
+
+            <div id="quiz11" class="display-none">
+                <h3 class="quiz-question">
+                    Jaane Nahin Denge Tujhe, Jaane Tujhe Denge Nahin 
+Chaahe Tujhako Rab Bula Le, Hum Na Rab Se Daranewaale
+Raahon Mein Datake Khade Hai Hum
+Yaaron Se Najarein Chura Le, Chaahe Kitana Dum Laga Le
+Jaane Na Tujhako Aise Denge Hum
+Jaane Nahin Denge Tujhe, Jaane Tujhe Denge Nahin
+                </h3>
+
+                <div class="quiz-textbox-container">
+                    <input type="text" id="quiz-textbox11_1" class="quiz-textbox" onchange="capitalizeTextboxContents(11)" placeholder="Enter Your Answer"/>
+                </div>
+
+                <div class="quiz-button-container">
+                    <button type="submit" id="submit-quiz11" class="quiz-button" onclick="checkQuiz11()"> Submit </button>
+                </div>
+
+                <div class="video-container">
+                    <video height="300" id="video11" class="display-none" controls hidden>
+                        <source src="videos\video11.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <!-- ########## QUIZ 12 ########## -->
+
+            <div id="quiz12" class="display-none">
+                <h3 class="quiz-question">
+                    Shared load of memories
+Aate hi food
+Love to abuse
+Scared of rats
+But die for chicken's
+Who the fuck I'm dude?
+                </h3>
+
+                <div class="quiz-textbox-container">
+                    <input type="text" id="quiz-textbox12_1" class="quiz-textbox" onchange="capitalizeTextboxContents(12)" placeholder="Enter Your Answer"/>
+                </div>
+
+                <div class="quiz-button-container">
+                    <button type="submit" id="submit-quiz12" class="quiz-button" onclick="checkQuiz12()"> Submit </button>
+                </div>
+
+                <div class="video-container">
+                    <video height="300" id="video12" class="display-none" controls hidden>
+                        <source src="videos\video12.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <!-- ########## QUIZ 13 ########## -->
+
+            <div id="quiz13" class="display-none">
+                <h3 class="quiz-question">
+                    Waqt esa h ki hum mil nhi skte, yaade esi h jo bhula nhi skte , 
+Tere saat ban gaya esa rishta jo zindagi bhaar thukara nhi skte . 
+
+Asman ke niche jiye the
+ Vo sukoon ke lamhe 
+Bemanzil befikre!!!
+
+"Ab me English me translate karu?"
+"Feelings samaj words pe mat jaa"
+                </h3>
+
+                <div class="quiz-textbox-container">
+                    <input type="text" id="quiz-textbox13_1" class="quiz-textbox" onchange="capitalizeTextboxContents(13)" placeholder="Enter Your Answer"/>
+                </div>
+
+                <div class="quiz-button-container">
+                    <button type="submit" id="submit-quiz13" class="quiz-button" onclick="checkQuiz13()"> Submit </button>
+                </div>
+
+                <div class="video-container">
+                    <video height="300" id="video13" class="display-none" controls hidden>
+                        <source src="videos\video13.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <!-- ########## POST QUIZ - THANK YOU ########## -->
+
+            <div id="post-quiz" class="display-none">
+                <h2>
+                    THANK YOU.!
+                </h2>
+            </div>
+        </div>
+
+        <!-- ########## MEMORIES ########## -->
+
+        <div id="memories" class="memories-container display-none">
+
+            <audio id="memory-background-audio" controls>
+                <source src="audio\memory_background_audio.mp3"></source>
+            </audio>
+
+            <div id="memories-section-1" class="memories-section1 display-none">
+
+                <div id="memory1" class="memory display-none">
+                    <img class="memories-image-type1" src="images/memory1.jpg"/>
+                    <audio id="memory-audio1" controls>
+                        <source src="audio\memory_audio1.mp3"></source>
+                    </audio>
+                </div>
+
+                <div id="memory2" class="memory display-none">
+                    <img class="memories-image-type1 increase-img-height1" src="images/memory2.jpg"/>
+                    <audio id="memory-audio2" controls>
+                        <source src="audio\memory_audio2.mp3"></source>
+                    </audio>
+                </div>
+
+                <div id="memory3" class="memory display-none">
+                    <img class="memories-image-type1 increase-img-height2" src="images/memory3.jpg"/>
+                    <audio id="memory-audio3" controls>
+                        <source src="audio\memory_audio3.mp3"></source>
+                    </audio>
+                </div>
+
+                <div id="memory4" class="memory display-none">
+                    <img class="memories-image-type1" src="images/memory4.jpg"/>
+                    <audio id="memory-audio4" controls>
+                        <source src="audio\memory_audio4.mp3"></source>
+                    </audio>
+                </div>
+            </div>
+
+            <div id="memories-section-2" class="memories-section2 display-none">
+
+                <div id="memory5" class="memory display-none">
+
+                    <div class="memories-section2-part1">
+                        <div>
+                            <img class="memories-image-type2" src="images/memory5.jpg"/>
+                        </div>
+                    </div> 
+
+                    <div class="memories-section2-part2">
+                        <div>
+                            <img class="memories-image-type3" src="images/memory6.jpg"/>
+                        </div>
+    
+                        <div>
+                            <img class="memories-image-type3" src="images/memory7.jpg"/>
+                        </div>
+                    </div>
+                    
+                    <audio id="memory-audio5" controls>
+                        <source src="audio\memory_audio5.mp3"></source>
+                    </audio>
+
+                </div>
+
+                <div id="memory6" class="memory display-none">
+                    
+                    <div class="memories-section2-part1">
+                        <div>
+                            <img class="memories-image-type2" src="images/memory8.jpg"/>
+                        </div>
+                    </div>
+                    
+                    <div class="memories-section2-part2">
+                        <div>
+                            <img class="memories-image-type3" src="images/memory9.jpg"/>
+                        </div>
+    
+                        <div>
+                            <img class="memories-image-type3" src="images/memory10.jpg"/>
+                        </div>
+                    </div>
+
+                    <audio id="memory-audio6" controls>
+                        <source src="audio\memory_audio6.mp3"></source>
+                    </audio>
+
+                </div>
+            </div>
+
+            <div id="post-memory" class="memories-section-3  display-none">
+                <div>
+                    <h2> THANK YOU </h2>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+    
+</html>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
